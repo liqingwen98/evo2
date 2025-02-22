@@ -94,7 +94,6 @@ def main():
     
     # Calculate and validate results
     mean_loss = np.mean(losses)
-    print(mean_loss)
     mean_accuracy = np.mean(accuracies) * 100
     print(f"\nMean Loss: {mean_loss:.3f}")
     print(f"Mean Accuracy: {mean_accuracy:.3f}%")
