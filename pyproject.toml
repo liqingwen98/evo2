@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evo2"
+dynamic = ["version"]
+description = "Genome modeling across all domains of life"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Evo 2 Team"},
+]
+dependencies = [
+    "biopython",
+    "huggingface_hub",
+    "vtx",
+]
+
+[project.urls]
+Homepage = "https://github.com/arcinstitute/evo2"
+Repository = "https://github.com/arcinstitute/evo2"
+
+[tool.setuptools]
+packages = ["evo2"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+evo2 = ["evo2/configs/*.yml"]
+
+[tool.setuptools.dynamic]
+version = {attr = "evo2.version.version"}
