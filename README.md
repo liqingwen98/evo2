@@ -39,7 +39,7 @@ Evo 2 uses [StripedHyena 2](https://github.com/Zymrael/vortex). Before installin
   - NVIDIA Driver supporting CUDA 12.0 or later
   - cuDNN 8.1 or later
   - NVIDIA GPU with compute capability ≥8.9
-If you encounter errors installing Transformer Engine, make sure the necessary prerequisites are correct and variables are set. Refer to the [Transformer Engine github](https://github.com/NVIDIA/TransformerEngine).
+If you encounter errors installing Transformer Engine, refer to the [github](https://github.com/NVIDIA/TransformerEngine) and make sure the necessary prerequisites are correct and variables are set.
 
 ### Installation
 
