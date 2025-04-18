@@ -32,14 +32,14 @@ For immediate use without installation, access Evo 2 through the [NVIDIA Hosted 
 
 ### Prerequisites
 Evo 2 uses [StripedHyena 2](https://github.com/Zymrael/vortex). Before installing Evo 2, ensure you have:
-- Python 3.11 or higher
-- CUDA-compatible version of PyTorch >= 2.6.0 installed
-- Preqequisites for [Transformer Engine](https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.13/user-guide/installation.html) == 1.13.0. If you encounter errors installing Transformer Engine, make sure the necessary prerequisits are installed and findable
+- CUDA version of PyTorch >= 2.6.0 installed
+- [Transformer Engine](https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.13/user-guide/installation.html) == 1.13.0, which requires the follow prerequisites
   - Linux x86_64
   - CUDA 12.0
   - NVIDIA Driver supporting CUDA 12.0 or later
   - cuDNN 8.1 or later
   - NVIDIA GPU with compute capability ≥8.9
+If you encounter errors installing Transformer Engine, make sure the necessary prerequisites are correct and variables are set. Refer to the [Transformer Engine github](https://github.com/NVIDIA/TransformerEngine).
 
 ### Installation
 
