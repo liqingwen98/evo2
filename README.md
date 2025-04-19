@@ -32,6 +32,7 @@ For immediate use without installation, access Evo 2 through the [NVIDIA Hosted 
 
 ### Prerequisites
 Evo 2 uses [StripedHyena 2](https://github.com/Zymrael/vortex). Before installing Evo 2, ensure you have:
+- Python >= 3.10, < 3.13
 - CUDA version of PyTorch >= 2.6.0 installed
 - [transformer_engine[pytorch]](https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.13/user-guide/installation.html) == 1.13.0, which requires the follow prerequisites
   - Linux x86_64
