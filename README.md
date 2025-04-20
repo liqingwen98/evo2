@@ -44,7 +44,7 @@ If you encounter errors installing Transformer Engine, refer to the [github](htt
 
 ### Installation
 
-To get started with Evo 2, install from pip or from github
+To get started with Evo 2, install from pip or from github. We recommend using a conda environment with the prerequisites above.
 
 ```bash
 pip install evo2
