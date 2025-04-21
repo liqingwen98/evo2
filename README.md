@@ -20,18 +20,22 @@ We describe Evo 2 in the preprint:
   - [Notebooks](#notebooks)
   - [Nvidia NIM](#nvidia-nim)
 - [Dataset](#dataset)
-- [Training Code](#dataset)
+- [Training and Finetuning](#training-and-finetuning)
 - [Citation](#citation)
-
 
 ## Setup
 
-To setup Evo 2 locally, follow the installation instructions below.
+This repo is for running Evo 2 locally for inference or generation, using our [Vortex](https://github.com/Zymrael/vortex) inference code. For training and finetuning, see the section [here](#training-and-finetuning).
+You can run Evo 2 without any installation using the [Nvidia Hosted API](https://build.nvidia.com/arc/evo2-40b).
+You can also self-host an instance using Nvidia NIM. See the [Nvidia NIM](#nvidia-nim) section for more 
+information.
+
+### Requirements
 
 For immediate use without installation, access Evo 2 through the [NVIDIA Hosted API](https://build.nvidia.com/arc/evo2-40b). You can deploy your own instance with the same API as the NVIDIA hosted service using NVIDIA NIM. See the [NVIDIA NIM](#nvidia-nim-for-evo-2) section below for configuration details.
 
 ### Prerequisites
-Evo 2 uses [StripedHyena 2](https://github.com/Zymrael/vortex). Before installing Evo 2, ensure you have:
+Evo 2 uses the [Vortex package for StripedHyena 2](https://github.com/Zymrael/vortex). Before installing Evo 2, ensure you have:
 - Python >= 3.10, < 3.13
 - CUDA version of PyTorch >= 2.6.0 installed
 - [transformer_engine[pytorch]](https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.13/user-guide/installation.html) == 1.13.0, which requires the follow prerequisites
@@ -194,15 +198,17 @@ else:
 
 ### Very long sequences
 
-We are actively working on optimizing performance for long sequence processing. Vortex can currently compute over very long sequences via sequence forcing. However please note that forward pass on long sequences may currently be slow.
+We are actively working on optimizing performance for long sequence processing in Vortex. Vortex can currently compute over very long sequences via teacher prompting. However please note that forward pass on long sequences may currently be slow. You can instead use [Savanna](https://github.com/Zymrael/savanna) or [Nvidia BioNemo](https://github.com/NVIDIA/bionemo-framework) for embedding long sequences.
 
-## Dataset
+### Dataset
 
 The OpenGenome2 dataset used for pretraining Evo2 is available on [HuggingFace ](https://huggingface.co/datasets/arcinstitute/opengenome2). Data is available either as raw fastas or as JSONL files which include preprocessing and data augmentation.
 
-## Training Code
+### Training and Finetuning
 
 Evo 2 was trained using [Savanna](https://github.com/Zymrael/savanna), an open source framework for training alternative architectures.
+
+To train or finetune Evo 2, you can use [Savanna](https://github.com/Zymrael/savanna) or [Nvidia BioNemo](https://github.com/NVIDIA/bionemo-framework) which provides a [Evo 2 finetuning tutorial here](https://github.com/NVIDIA/bionemo-framework/blob/ca16c2acf9bf813d020b6d1e2d4e1240cfef6a69/docs/docs/user-guide/examples/bionemo-evo2/fine-tuning-tutorial.ipynb).
 
 ## Citation
 
