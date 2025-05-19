@@ -35,7 +35,7 @@ information.
 For immediate use without installation, access Evo 2 through the [NVIDIA Hosted API](https://build.nvidia.com/arc/evo2-40b). You can deploy your own instance with the same API as the NVIDIA hosted service using NVIDIA NIM. See the [NVIDIA NIM](#nvidia-nim-for-evo-2) section below for configuration details.
 
 ### Prerequisites
-Evo 2 uses the [Vortex package for StripedHyena 2](https://github.com/Zymrael/vortex). See the [github](https://github.com/Zymrael/vortex) for alternatives if facing issues installing vortex from pypi.
+Evo 2 uses the [Vortex package for StripedHyena 2](https://github.com/Zymrael/vortex). See the [github](https://github.com/Zymrael/vortex) for alternative installation if facing issues installing [vortex from pypi](https://pypi.org/project/vtx/).
 
 Before installing Evo 2, ensure you have:
 - Python >= 3.10, < 3.13
@@ -46,7 +46,7 @@ Before installing Evo 2, ensure you have:
   - NVIDIA Driver supporting CUDA 12.0 or later
   - cuDNN 8.1 or later
   - NVIDIA GPU with compute capability ≥8.9
-If you encounter errors installing Transformer Engine, refer to the [github](https://github.com/NVIDIA/TransformerEngine) and make sure the necessary prerequisites are correct and variables are set.
+If you encounter errors installing Transformer Engine, refer to the [github](https://github.com/NVIDIA/TransformerEngine) and make sure the necessary prerequisites are correct and environmental variables are set.
 
 ### Installation
 
