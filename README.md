@@ -46,20 +46,18 @@ Before installing Evo 2, ensure you have:
   - cuDNN 8.1 or later
   - NVIDIA GPU with compute capability ≥8.9
 
-To install transformer_engine[pytorch] 1.13 you can use conda (or pip. 
+To install the prerequisites:
+
 ```bash
+conda install -c nvidia cuda-toolkit
 conda install -c conda-forge transformer-engine-torch=1.13
 ```
-For pip installation, refer to the [github](https://github.com/NVIDIA/TransformerEngine/blob/3baaf3ffe5bbfc87b3495b5513770cd4b85d7458/README.rst#troubleshooting) and make sure the necessary prerequisites are correct and environmental variables are set.
-```bash
-pip install transformer_engine[pytorch]==1.13.0
-```
 
-Evo 2 uses the [Vortex package for StripedHyena 2](https://github.com/Zymrael/vortex). See the [github](https://github.com/Zymrael/vortex) for alternative installation if facing issues installing [vortex from pypi](https://pypi.org/project/vtx/).
+Evo 2 uses the [Vortex package for StripedHyena 2](https://github.com/Zymrael/vortex). See the [github](https://github.com/Zymrael/vortex) for alternative installation instructions.
 
 ### Installation
 
-To get started with Evo 2, install from pip or from github. We recommend using a conda environment with the prerequisites above. 
+To get started with Evo 2, install from pip or from github. We recommend using a conda environment with the prerequisites above installed.
 
 ```bash
 pip install evo2
