@@ -50,17 +50,14 @@ Evo 2 requires the following prerequisites. Evo 2 uses the Vortex, see the [Vort
 ### Installation
 
 To get started with Evo 2, install from pip or from github. We recommend using a conda environment to easily install the prerequisites.
-
-To install the prerequisites, we recommend using conda. You can also install Transformer Engine using pip. 
 ```bash
 conda install -c nvidia cuda-toolkit
 conda install -c conda-forge transformer-engine-torch=1.13
 ```
-You can also use pip for Transformer Engine
+You can also use pip for Transformer Engine. Troubleshooting tips for Transformer Engine installation are available on the [Transformer Engine github](https://github.com/NVIDIA/TransformerEngine/blob/3baaf3ffe5bbfc87b3495b5513770cd4b85d7458/README.rst#troubleshooting).
 ```bash
 pip install transformer_engine[pytorch]==1.13
 ```
-Troubleshooting tips for Transformer Engine installation are available on the [Transformer Engine github](https://github.com/NVIDIA/TransformerEngine/blob/3baaf3ffe5bbfc87b3495b5513770cd4b85d7458/README.rst#troubleshooting).
 
 
 To install Evo 2:
@@ -76,7 +73,6 @@ pip install .
 ```
 
 To verify that the installation was correct:
-
 ```
 python -m evo2.test.test_evo2_generation --model_name evo2_7b
 ```
