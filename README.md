@@ -55,15 +55,12 @@ conda install -c nvidia cuda-toolkit
 conda install -c conda-forge transformer-engine-torch=1.13
 ```
 You can also use pip for Transformer Engine. Troubleshooting tips for Transformer Engine installation are available on the [Transformer Engine github](https://github.com/NVIDIA/TransformerEngine/blob/3baaf3ffe5bbfc87b3495b5513770cd4b85d7458/README.rst#troubleshooting).
-```bash
-pip install transformer_engine[pytorch]==1.13
-```
-
 
 To install Evo 2:
 ```bash
 pip install evo2
 ```
+Evo 2 installs and builds [Vortex](https://github.com/Zymrael/vortex), see the github for alternative methods to install Vortex!
 
 For the latest features or to contribute:
 ```bash
