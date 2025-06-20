@@ -60,7 +60,7 @@ To install Evo 2:
 ```bash
 pip install evo2
 ```
-Evo 2 installs and builds [Vortex](https://github.com/Zymrael/vortex), see the github for alternative methods to install Vortex!
+Evo 2 installs and builds [Vortex](https://github.com/Zymrael/vortex), look at the vortex github for installation facing errors. Common errors include incompatible versions of Flash Attention or not having CUDA_HOME and CPATH variables defined, which are needed to build Flash Attention.
 
 For the latest features or to contribute:
 ```bash
