@@ -39,7 +39,7 @@ For immediate use without installation, access Evo 2 through the [NVIDIA Hosted 
 Evo 2 requires the following prerequisites. Evo 2 uses the Vortex, see the [Vortex github](https://github.com/Zymrael/vortex) for details and alternative installations
 
 - Python >= 3.10, < 3.13
-- CUDA version of PyTorch >= 2.5.0, =<2.7.0
+- CUDA version of PyTorch >= 2.5.0,<=2.6.1
 - [transformer_engine[pytorch]](https://docs.nvidia.com/deeplearning/transformer-engine-releases/release-1.13/user-guide/installation.html) == 1.13.0, which requires the following
   - Linux x86_64
   - CUDA 12.0
@@ -60,7 +60,7 @@ To install Evo 2:
 ```bash
 pip install evo2
 ```
-Evo 2 installs and builds [Vortex](https://github.com/Zymrael/vortex), look at the vortex github for installation facing errors. Common errors include incompatible versions of Flash Attention or not having CUDA_HOME and CPATH variables defined, which are needed to build Flash Attention.
+This installs and builds [Vortex](https://github.com/Zymrael/vortex). Look at the vortex github for alternative ways to install if facing errors. Common errors include already having incompatible versions of Flash Attention installed or not having CUDA_HOME and CPATH variables defined when installing.
 
 For the latest features or to contribute:
 ```bash
